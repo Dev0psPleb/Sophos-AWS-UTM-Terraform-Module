@@ -1,4 +1,4 @@
-module "cloudformation_stack" {
+module "sophos_utm_standalone_cf_stack" {
     source                  = "cloudposse/cloudformation-stack/aws"
     enabled                 = true
     environment             = "us-east-2"
