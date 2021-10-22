@@ -7,8 +7,8 @@ module "sophos_utm_standalone_cf_stack" {
     name                    = "sophos-standalone-utm"
     template_url            = "https://s3.amazonaws.com/sophos-nsg-cf/utm/standalone.template"
     tags                    = {
-        'Environment': 'Testing'
-        'BusinessUnit': 'Sophos-CSP'
+        "Environment": "Testing"
+        "BusinessUnit": "Sophos-CSP"
     }
 
     parameters              = {
