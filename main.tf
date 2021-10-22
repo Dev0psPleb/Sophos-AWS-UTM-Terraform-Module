@@ -1,7 +1,7 @@
 module "cloudformation_stack" {
     source                  = "cloudposse/cloudformation-stack/aws"
     enabled                 = true
-    namespace               = "utm"
+    namespace               = "Sophos UTM AWS Terraform Test"
     name                    = "sophos-standalone-utm"
     template_url            = "https://s3.amazonaws.com/sophos-nsg-cf/utm/standalone.template"
 
