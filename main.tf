@@ -14,7 +14,7 @@ module "cloudformation_stack" {
         PrivateNetworkCIDR = "0.0.0.0/0"
         PublicNetworkCIDR = "0.0.0.0/0"
         OptTrustedNetworkCIDR = "47.188.126.61/32"
-        InstanceSize = "t2.medium"
+        InstanceSize = "default"
         KeyName = "aws_vpc"
         OptExistingElasticIpId = ""
     }
