@@ -1,10 +1,16 @@
 module "cloudformation_stack" {
     source                  = "cloudposse/cloudformation-stack/aws"
     enabled                 = true
+    environment             = "us-east-2"
+    stage                   = "testing"
     namespace               = "Sophos UTM AWS Terraform Test"
     name                    = "sophos-standalone-utm"
     template_url            = "https://s3.amazonaws.com/sophos-nsg-cf/utm/standalone.template"
-
+    tags                    = {
+        'Environment': 'Testing'
+        'BusinessUnit': 'Sophos-CSP'
+    }
+    
     parameters              = {
         AMI = "autodetect"
         LicenseType = "Hourly"
